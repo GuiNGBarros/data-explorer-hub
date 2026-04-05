@@ -13,10 +13,10 @@ const HeroSection = () => {
       <div className="relative section-container text-center py-32">
         <div className="animate-fade-in">
           <p className="text-primary font-mono text-sm tracking-wider mb-4">
-            Olá, eu sou
+            Olá, seja bem vindo(a). Eu sou
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
-            <span className="text-gradient">Seu Nome</span>
+            <span className="text-gradient">Guilherme Barros</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground font-light mb-8 max-w-2xl mx-auto">
             Analista de Dados & Engenheiro de Dados
