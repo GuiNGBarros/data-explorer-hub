@@ -1,10 +1,9 @@
 import { Linkedin, Github, Mail, MessageCircle } from "lucide-react";
 
 const links = [
-  { icon: <Linkedin size={22} />, label: "LinkedIn", href: "https://linkedin.com", color: "hover:bg-[hsl(210,80%,25%)]" },
-  { icon: <Github size={22} />, label: "GitHub", href: "https://github.com", color: "hover:bg-[hsl(220,10%,25%)]" },
-  { icon: <Mail size={22} />, label: "Email", href: "mailto:seuemail@email.com", color: "hover:bg-[hsl(0,60%,30%)]" },
-  { icon: <MessageCircle size={22} />, label: "WhatsApp", href: "https://wa.me/5500000000000", color: "hover:bg-[hsl(142,60%,25%)]" },
+  { icon: <Linkedin size={22} />, label: "LinkedIn", href: "https://www.linkedin.com/in/nobrebarrosgui/", color: "hover:bg-[hsl(210,80%,25%)]" },
+  { icon: <Mail size={22} />, label: "Email", href: "mailto:g.nobrebarros@gmail.com", color: "hover:bg-[hsl(0,60%,30%)]" },
+  { icon: <MessageCircle size={22} />, label: "WhatsApp", href: "https://wa.me/5511987349745", color: "hover:bg-[hsl(142,60%,25%)]" },
 ];
 
 const ContactSection = () => {
