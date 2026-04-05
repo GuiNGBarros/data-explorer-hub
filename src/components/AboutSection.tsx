@@ -1,16 +1,15 @@
 import { BarChart3, Database, LineChart, Code2 } from "lucide-react";
 
 const skills = [
-  { icon: <BarChart3 size={24} />, title: "Análise de Dados", desc: "Exploração, limpeza e visualização de dados para insights acionáveis." },
-  { icon: <Database size={24} />, title: "Engenharia de Dados", desc: "Pipelines ETL, Data Warehouses e arquiteturas de dados escaláveis." },
-  { icon: <LineChart size={24} />, title: "Visualização", desc: "Dashboards interativos e storytelling com dados em Power BI e Python." },
-  { icon: <Code2 size={24} />, title: "Programação", desc: "Python, SQL e ferramentas modernas para automação e análise." },
+  { icon: <BarChart3 size={24} />, title: "Análise de Dados", desc: "Exploração, limpeza e visualização de dados para negócios." },
+  { icon: <Database size={24} />, title: "Engenharia de Dados", desc: "Pipelines de Dados, Data Warehouses, Data Lakes e arquiteturas de dados escaláveis." },
+  { icon: <LineChart size={24} />, title: "Visualização", desc: "Dashboards interativos e storytelling com dados em Power BI, Amazon QuickSght e Looker Studio." },
+  { icon: <Code2 size={24} />, title: "Programação e Automação", desc: "Python e ferramentas modernas para automação e análise." },
 ];
 
 const technologies = [
-  "Python", "SQL", "Power BI", "Azure", "Databricks", "Spark",
-  "Airflow", "dbt", "Snowflake", "Docker", "Kafka", "Git",
-  "Pandas", "Scikit-learn", "Tableau", "Excel",
+  "Python", "SQL", "Power BI", "Looker Studio", "Excel", "AWS", "Databricks", "Spark",
+  "Pandas", "Scikit-learn", "GCP",
 ];
 
 const AboutSection = () => {
