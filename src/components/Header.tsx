@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="section-container flex items-center justify-between h-16">
         <a href="#inicio" className="text-xl font-bold text-gradient">
-          &lt;Data/&gt;
+          Portifólio
         </a>
 
         {/* Desktop */}
