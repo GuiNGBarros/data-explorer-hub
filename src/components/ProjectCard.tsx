@@ -49,7 +49,7 @@ const ProjectCard = ({ project, onViewDetails, index }: ProjectCardProps) => {
           className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border text-sm font-medium text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all"
         >
           <ExternalLink size={14} />
-          GitHub
+          Power BI
         </a>
       </div>
     </div>

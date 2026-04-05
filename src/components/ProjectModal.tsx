@@ -63,7 +63,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             rel="noopener noreferrer"
             className="px-6 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
           >
-            Ver no GitHub
+            Ver no Power BI
           </a>
           <button
             onClick={onClose}

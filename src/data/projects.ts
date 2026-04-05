@@ -18,12 +18,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "dashboard-vendas",
-    title: "Dashboard de Vendas Interativo",
+    id: "dashboard-hospitalar",
+    title: "Dashboard de Gestão Hospitalar Interativo",
     description: "Dashboard completo para análise de vendas com KPIs, tendências e segmentação de clientes em tempo real.",
     category: "analise",
     technologies: ["Python", "Power BI", "SQL", "Pandas"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTRiMTEyMjMtZWNjNC00MDM1LWJlNzgtMGVjNWI4NGJiN2UyIiwidCI6IjZhOTg3ZjAxLWEzNjAtNDY1OC04OTBhLTFkM2VkNmVkOWJlNyJ9",
     featured: true,
     details: {
       problem: "A empresa não possuía visibilidade sobre métricas de vendas, dificultando a tomada de decisão estratégica.",
