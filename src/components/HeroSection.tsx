@@ -19,10 +19,10 @@ const HeroSection = () => {
             <span className="text-gradient">Guilherme Barros</span>
           </h1>
           <p className="text-xl sm:text-2xl text-muted-foreground font-light mb-8 max-w-2xl mx-auto">
-            Analista de Dados & Engenheiro de Dados
+            Analista de Dados | Engenheiro de Dados
           </p>
           <p className="text-muted-foreground max-w-xl mx-auto mb-12 leading-relaxed">
-            Transformando dados brutos em insights estratégicos e construindo pipelines robustos para impulsionar decisões de negócio.
+            Transformando dados brutos em insights estratégicos, criando pipelines eficientes e análises que apoiam decisões de negócio
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-gradient-primary font-semibold text-primary-foreground hover:opacity-90 transition-all duration-200 hover:scale-105 glow-shadow"
           >
             <BarChart3 size={20} />
-            Projetos de Análise
+            Projetos de Análise de Dados
           </a>
           <a
             href="#projetos"
@@ -41,7 +41,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-primary/30 text-foreground font-semibold hover:bg-primary/10 transition-all duration-200 hover:scale-105"
           >
             <Database size={20} />
-            Projetos de Engenharia
+            Projetos de Engenharia de Dados
           </a>
         </div>
 
