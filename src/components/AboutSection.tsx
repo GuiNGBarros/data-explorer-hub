@@ -18,7 +18,7 @@ const AboutSection = () => {
     <section id="sobre" className="py-24 bg-card/30">
       <div className="section-container">
         <div className="text-center mb-12">
-          <p className="text-primary font-mono text-sm mb-2">Sobre</p>
+          <p className="text-primary font-mono text-sm mb-2"></p>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
             Sobre <span className="text-gradient">Mim</span>
           </h2>
@@ -26,9 +26,13 @@ const AboutSection = () => {
 
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-muted-foreground leading-relaxed">
-            Profissional apaixonado por dados com experiência em análise e engenharia de dados.
-            Atuo transformando dados brutos em soluções que geram valor real para negócios,
-            desde dashboards estratégicos até pipelines de dados escaláveis na nuvem.
+            Profissional da área de dados, formado em Física pela Universidade de São Paulo, com foco em transformar dados em soluções práticas para negócios.
+            Iniciei minha jornada em 2018, em um projeto de iniciação científica, onde tive contato com Excel, SQL e Python na coleta, tratamento e análise de dados.
+            Desde então, venho desenvolvendo uma base sólida em modelagem matemática, estatística e raciocínio computacional, aplicada a problemas reais.
+            Atuo na área de dados com experiência no setor hospitalar, envolvendo estoque, faturamento, auditoria e convênios.
+            Desenvolvo pipelines end-to-end, estruturando dados transacionais em data warehouse para consumo em BI.
+            Também utilizo serviços em nuvem (AWS) e crio integrações com dashboards, agentes de IA e chatbots.
+            Atualmente, sigo focado em gerar valor por meio de decisões orientadas por dados, unindo análise e engenharia em soluções estratégicas.
           </p>
         </div>
 
