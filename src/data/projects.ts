@@ -27,7 +27,7 @@ export const projects: Project[] = [
     featured: true,
     details: {
       problem: "A empresa não possuía visibilidade sobre métricas de negócios, dificultando a tomada de decisão estratégica.",
-      solution: "Desenvolvimento de um dashboard interativo em Power BI com conexão direta ao banco de dados SQL, utilizando Python para ETL e Pandas para transformação de dados.",
+      solution: "Desenvolvimento de um dashboard interativo em Power BI com conexão a um Data Warehouse (DW), utilizando Python/Pandas para coleta, automação, transformação de dados e ingestão no DW.",
       tools: ["Power BI", "SQL Server", "Python", "Pandas", "DAX"],
       results: "Redução de 62% em perdas por estoque parado e saving de 74%.",
     },
