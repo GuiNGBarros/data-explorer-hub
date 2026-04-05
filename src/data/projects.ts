@@ -20,16 +20,16 @@ export const projects: Project[] = [
   {
     id: "dashboard-hospitalar",
     title: "Dashboard de Gestão Hospitalar Interativo",
-    description: "Dashboard completo para análise de vendas com KPIs, tendências e segmentação de clientes em tempo real.",
+    description: "Dashboard completo para gestão de estoque, compras e faturamento; audioria e exames.",
     category: "analise",
-    technologies: ["Python", "Power BI", "SQL", "Pandas"],
+    technologies: ["Power BI", "SQL", "Python", "Pandas"],
     githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTRiMTEyMjMtZWNjNC00MDM1LWJlNzgtMGVjNWI4NGJiN2UyIiwidCI6IjZhOTg3ZjAxLWEzNjAtNDY1OC04OTBhLTFkM2VkNmVkOWJlNyJ9",
     featured: true,
     details: {
-      problem: "A empresa não possuía visibilidade sobre métricas de vendas, dificultando a tomada de decisão estratégica.",
+      problem: "A empresa não possuía visibilidade sobre métricas de negócios, dificultando a tomada de decisão estratégica.",
       solution: "Desenvolvimento de um dashboard interativo em Power BI com conexão direta ao banco de dados SQL, utilizando Python para ETL e Pandas para transformação de dados.",
-      tools: ["Python", "Power BI", "SQL Server", "Pandas", "DAX"],
-      results: "Redução de 40% no tempo de geração de relatórios e aumento de 25% na assertividade das decisões comerciais.",
+      tools: ["Power BI", "SQL Server", "Python", "Pandas", "DAX"],
+      results: "Redução de 62% em perdas por estoque parado e saving de 74%.",
     },
   },
 ];
