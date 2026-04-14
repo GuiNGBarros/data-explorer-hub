@@ -26,24 +26,6 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.3s", opacity: 0 }}>
-          <a
-            href="#projetos"
-            data-category="analise"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-gradient-primary font-semibold text-primary-foreground hover:opacity-90 transition-all duration-200 hover:scale-105 glow-shadow"
-          >
-            <BarChart3 size={20} />
-            Projetos de Análise de Dados
-          </a>
-          <a
-            href="#projetos"
-            data-category="engenharia"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-primary/30 text-foreground font-semibold hover:bg-primary/10 transition-all duration-200 hover:scale-105"
-          >
-            <Database size={20} />
-            Projetos de Engenharia de Dados
-          </a>
-        </div>
 
         <a
           href="#projetos"
