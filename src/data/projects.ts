@@ -47,4 +47,19 @@ export const projects: Project[] = [
       results: "Maior transparência nos resultados da IA assistencial, facilitando ajustes e decisões baseadas em dados.",
     },
   },
+  {
+    id: "entregas-no-prazo",
+    title: "Entregas no Prazo - KPIs de Logística",
+    description: "Projeto de estudo: dashboard interativo para acompanhamento de KPIs logísticos, com foco em taxa de entregas no prazo.",
+    category: "analise",
+    technologies: ["Power BI", "SQL", "DAX"],
+    githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiNGZkNDIxMzItNzdmNS00YTU0LTg1ZTYtMWM0ZTMxYjFjZTdiIiwidCI6IjdlOTNlMjg2LWIyOWEtNDQ1NC1hNDFhLWU4NDE5ZWM5ZGViNSJ9",
+    featured: false,
+    details: {
+      problem: "Necessidade de praticar a construção de dashboards voltados à área de logística, analisando indicadores de desempenho de entregas.",
+      solution: "Desenvolvimento de um painel em Power BI com KPIs de logística como taxa de entrega no prazo, atrasos e desempenho por região.",
+      tools: ["Power BI", "DAX", "Excel"],
+      results: "Projeto de estudo que reforçou habilidades em modelagem de dados e criação de visualizações voltadas à logística.",
+    },
+  },
 ];
