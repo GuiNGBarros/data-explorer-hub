@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: "Dashboard completo para gestão de estoque, compras e faturamento; audioria e exames.",
     category: "analise",
     technologies: ["Power BI", "SQL", "Python", "Pandas"],
-    githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiZTRiMTEyMjMtZWNjNC00MDM1LWJlNzgtMGVjNWI4NGJiN2UyIiwidCI6IjZhOTg3ZjAxLWEzNjAtNDY1OC04OTBhLTFkM2VkNmVkOWJlNyJ9",
+    githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiODI2MWFiNWItYWM5NC00MDhkLTg2Y2YtZTIxMGUwZDAxZTA1IiwidCI6IjdlOTNlMjg2LWIyOWEtNDQ1NC1hNDFhLWU4NDE5ZWM5ZGViNSJ9",
     featured: true,
     details: {
       problem: "A empresa não possuía visibilidade sobre métricas de negócios, dificultando a tomada de decisão estratégica.",
