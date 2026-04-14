@@ -32,4 +32,19 @@ export const projects: Project[] = [
       results: "Redução de 62% em perdas por estoque parado e saving de 74%.",
     },
   },
+  {
+    id: "painel-ia-assistencial",
+    title: "Painel de Monitoramento de IA Assistencial",
+    description: "Painel interativo para monitoramento e análise de indicadores de IA aplicada à assistência em saúde.",
+    category: "analise",
+    technologies: ["Power BI", "SQL", "Python", "Pandas"],
+    githubUrl: "https://app.powerbi.com/view?r=eyJrIjoiYmRkNWQzZDctZWRlYi00ZTQwLWE0MjctYTFjMDlhNjdmMDg4IiwidCI6IjdlOTNlMjg2LWIyOWEtNDQ1NC1hNDFhLWU4NDE5ZWM5ZGViNSJ9",
+    featured: false,
+    details: {
+      problem: "Falta de visibilidade sobre o desempenho e impacto dos modelos de IA assistencial na operação hospitalar.",
+      solution: "Criação de um painel em Power BI integrado a fontes de dados de IA, permitindo acompanhamento em tempo real de métricas de acurácia, utilização e impacto clínico.",
+      tools: ["Power BI", "SQL Server", "Python", "Pandas", "DAX"],
+      results: "Maior transparência nos resultados da IA assistencial, facilitando ajustes e decisões baseadas em dados.",
+    },
+  },
 ];
