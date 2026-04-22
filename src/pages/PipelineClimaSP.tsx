@@ -24,6 +24,7 @@ const modules: ModuleEntry[] = [
 
 const PipelineClimaSP = () => {
   const [active, setActive] = useState<ModuleEntry | null>(null);
+  const [zoomImg, setZoomImg] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -156,13 +157,15 @@ const PipelineClimaSP = () => {
               src={airflow1}
               alt="DAG weather_pipeline no Airflow com agendamento e tasks extract, transform e load"
               loading="lazy"
-              className="w-full rounded-xl border border-border"
+              onClick={() => setZoomImg(airflow1)}
+              className="w-full rounded-xl border border-border cursor-zoom-in hover:border-primary/40 transition-colors"
             />
             <img
               src={airflow2}
               alt="Execução bem-sucedida das tasks extract, transform e load no Airflow"
               loading="lazy"
-              className="w-full rounded-xl border border-border"
+              onClick={() => setZoomImg(airflow2)}
+              className="w-full rounded-xl border border-border cursor-zoom-in hover:border-primary/40 transition-colors"
             />
           </div>
         </section>
@@ -195,6 +198,28 @@ const PipelineClimaSP = () => {
               <code>{active.code}</code>
             </pre>
           </div>
+        </div>
+      )}
+
+      {zoomImg && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/90 backdrop-blur-sm animate-fade-in"
+          style={{ animationDuration: "0.2s" }}
+          onClick={() => setZoomImg(null)}
+        >
+          <button
+            onClick={() => setZoomImg(null)}
+            className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors p-2"
+            aria-label="Fechar"
+          >
+            <X size={24} />
+          </button>
+          <img
+            src={zoomImg}
+            alt="Visualização ampliada"
+            className="max-w-full max-h-[90vh] rounded-xl border border-border animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </div>
