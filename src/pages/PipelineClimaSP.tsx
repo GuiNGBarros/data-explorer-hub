@@ -5,6 +5,8 @@ import extractCode from "@/codes/extract_data.py?raw";
 import transformCode from "@/codes/transform_data.py?raw";
 import loadCode from "@/codes/load_data.py?raw";
 import dagCode from "@/codes/weather_dag.py?raw";
+import airflow1 from "@/assets/airflow1.png";
+import airflow2 from "@/assets/airflow2.png";
 
 interface ModuleEntry {
   key: string;
