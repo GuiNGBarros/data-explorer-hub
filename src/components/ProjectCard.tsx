@@ -1,4 +1,5 @@
 import { ExternalLink, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import TechBadge from "./TechBadge";
 import type { Project } from "@/data/projects";
 
@@ -36,12 +37,21 @@ const ProjectCard = ({ project, onViewDetails, index }: ProjectCardProps) => {
       </div>
 
       <div className="flex gap-3">
-        <button
-          onClick={() => onViewDetails(project)}
-          className="flex-1 px-4 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
-        >
-          Ver mais
-        </button>
+        {project.detailRoute ? (
+          <Link
+            to={project.detailRoute}
+            className="flex-1 px-4 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity text-center"
+          >
+            Ver mais
+          </Link>
+        ) : (
+          <button
+            onClick={() => onViewDetails(project)}
+            className="flex-1 px-4 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
+          >
+            Ver mais
+          </button>
+        )}
         <a
           href={project.githubUrl}
           target="_blank"
@@ -49,7 +59,7 @@ const ProjectCard = ({ project, onViewDetails, index }: ProjectCardProps) => {
           className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-border text-sm font-medium text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all"
         >
           <ExternalLink size={14} />
-          Power BI
+          {project.externalLabel ?? "Power BI"}
         </a>
       </div>
     </div>
