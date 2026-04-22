@@ -148,6 +148,24 @@ const PipelineClimaSP = () => {
             ))}
           </div>
         </section>
+
+        <section className="mt-12">
+          <h2 className="text-sm font-mono text-primary mb-4">Execução no Airflow</h2>
+          <div className="grid sm:grid-cols-2 gap-4 max-w-4xl">
+            <img
+              src={airflow1}
+              alt="DAG weather_pipeline no Airflow com agendamento e tasks extract, transform e load"
+              loading="lazy"
+              className="w-full rounded-xl border border-border"
+            />
+            <img
+              src={airflow2}
+              alt="Execução bem-sucedida das tasks extract, transform e load no Airflow"
+              loading="lazy"
+              className="w-full rounded-xl border border-border"
+            />
+          </div>
+        </section>
       </div>
 
       {active && (
