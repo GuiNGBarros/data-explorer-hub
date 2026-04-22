@@ -39,13 +39,93 @@ const PipelineClimaSP = () => {
           <h1 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
             Pipeline de Dados – Clima de São Paulo (ETL com Airflow + Docker)
           </h1>
-          <p className="text-muted-foreground leading-relaxed max-w-3xl">
-            Este projeto implementa um pipeline ETL completo para coletar, transformar e armazenar
-            dados climáticos da cidade de São Paulo. Os dados são extraídos da API do OpenWeather,
-            normalizados com Pandas e carregados em um banco PostgreSQL. A orquestração é feita pelo
-            Apache Airflow, com toda a infraestrutura containerizada via Docker, garantindo execução
-            diária automatizada, com retries e logs estruturados.
-          </p>
+          <div className="text-muted-foreground leading-relaxed max-w-3xl space-y-6">
+            <p>
+              Este projeto implementa um pipeline ETL completo para coletar, transformar e armazenar
+              dados climáticos da cidade de São Paulo, entregando uma solução automatizada, robusta
+              e escalável de ponta a ponta.
+            </p>
+
+            <div>
+              <h2 className="text-foreground font-semibold mb-2">Pipeline ETL</h2>
+              <p className="mb-3">O pipeline foi estruturado em três etapas principais:</p>
+
+              <h3 className="text-foreground font-medium mb-1">🔹 1. Extração (Extract)</h3>
+              <ul className="list-disc list-inside space-y-1 mb-3">
+                <li>Consumo de dados da API OpenWeather (dados climáticos atuais de São Paulo)</li>
+                <li>Armazenamento inicial em formato JSON</li>
+                <li>Uso de variáveis de ambiente (.env) para segurança da API Key</li>
+              </ul>
+
+              <h3 className="text-foreground font-medium mb-1">🔹 2. Transformação (Transform)</h3>
+              <ul className="list-disc list-inside space-y-1 mb-3">
+                <li>Conversão do JSON em DataFrame com pandas</li>
+                <li>Normalização de dados aninhados (ex: coluna weather)</li>
+                <li>Padronização de nomes de colunas</li>
+                <li>Conversão de timestamps para datetime com timezone</li>
+                <li>Separação de data e hora em colunas distintas</li>
+                <li>Exportação intermediária em formato Parquet</li>
+              </ul>
+
+              <h3 className="text-foreground font-medium mb-1">🔹 3. Carga (Load)</h3>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Conexão com PostgreSQL via SQLAlchemy</li>
+                <li>Inserção dos dados na tabela final (sp_weather)</li>
+                <li>Validação simples após carga (contagem de registros)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-foreground font-semibold mb-2">Orquestração com Airflow</h2>
+              <p className="mb-2">
+                A orquestração foi implementada com uma DAG chamada{" "}
+                <code className="font-mono text-primary">weather_pipeline</code>, contendo três tasks:
+                <span className="font-mono text-foreground"> extract → transform → load</span>.
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Agendamento diário via cron (0 11 * * *)</li>
+                <li>Reprocessamento automático em caso de falha (retries)</li>
+                <li>Execução desacoplada entre etapas</li>
+                <li>Uso de decorators (@dag, @task) para definição moderna</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-foreground font-semibold mb-2">Ambiente e Infraestrutura</h2>
+              <p className="mb-2">
+                O ambiente foi configurado utilizando WSL (Windows Subsystem for Linux) para
+                garantir compatibilidade com ferramentas de engenharia de dados em ambiente Linux.
+                O Airflow e o banco de dados rodam em containers Docker, permitindo:
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Isolamento do ambiente</li>
+                <li>Facilidade de deploy em outras máquinas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-foreground font-semibold mb-2">Boas Práticas Aplicadas</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Uso de .env para variáveis sensíveis</li>
+                <li>Estrutura modular (extract, transform, load)</li>
+                <li>Reprodutibilidade do ambiente via Docker</li>
+                <li>Logging em todas as etapas do pipeline</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-foreground font-semibold mb-2">Resultado</h2>
+              <p className="mb-2">
+                O projeto entrega um pipeline automatizado, robusto e escalável, capaz de:
+              </p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Coletar dados externos</li>
+                <li>Processar e estruturar informações</li>
+                <li>Persistir dados em banco relacional</li>
+                <li>Executar de forma agendada</li>
+              </ul>
+            </div>
+          </div>
         </header>
 
         <section>

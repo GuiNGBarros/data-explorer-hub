@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description: "Pipeline ETL completo que extrai dados climáticos de São Paulo via API, transforma e carrega em PostgreSQL, orquestrado com Apache Airflow em containers Docker.",
     category: "engenharia",
     technologies: ["Python", "Airflow", "Docker", "PostgreSQL", "Pandas"],
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/GuiNGBarros/weather_SP_Brazil_pipeline",
     detailRoute: "/projetos/pipeline-clima-sp",
     externalLabel: "GitHub",
     featured: true,
