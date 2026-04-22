@@ -24,6 +24,7 @@ const modules: ModuleEntry[] = [
 
 const PipelineClimaSP = () => {
   const [active, setActive] = useState<ModuleEntry | null>(null);
+  const [zoomImg, setZoomImg] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
