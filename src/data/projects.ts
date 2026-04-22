@@ -8,6 +8,8 @@ export interface Project {
   technologies: string[];
   githubUrl: string;
   featured?: boolean;
+  detailRoute?: string;
+  externalLabel?: string;
   details: {
     problem: string;
     solution: string;
@@ -60,6 +62,23 @@ export const projects: Project[] = [
       solution: "Desenvolvimento de um painel em Power BI com KPIs de logística como taxa de entrega no prazo, atrasos e desempenho por região e por equipes.",
       tools: ["Power BI", "DAX", "SQL"],
       results: "Projeto de estudo que reforçou habilidades em modelagem de dados e criação de visualizações voltadas à logística.",
+    },
+  },
+  {
+    id: "pipeline-clima-sp",
+    title: "Pipeline de Dados – Clima de São Paulo (ETL com Airflow + Docker)",
+    description: "Pipeline ETL completo que extrai dados climáticos de São Paulo via API, transforma e carrega em PostgreSQL, orquestrado com Apache Airflow em containers Docker.",
+    category: "engenharia",
+    technologies: ["Python", "Airflow", "Docker", "PostgreSQL", "Pandas"],
+    githubUrl: "https://github.com",
+    detailRoute: "/projetos/pipeline-clima-sp",
+    externalLabel: "GitHub",
+    featured: true,
+    details: {
+      problem: "Necessidade de coletar e armazenar dados climáticos de São Paulo de forma automatizada e periódica, garantindo histórico confiável para análises posteriores.",
+      solution: "Construção de um pipeline ETL modular em Python, orquestrado pelo Apache Airflow rodando em containers Docker, com etapas de extração via API OpenWeather, transformação com Pandas e carga em banco PostgreSQL.",
+      tools: ["Python", "Apache Airflow", "Docker", "PostgreSQL", "Pandas", "SQLAlchemy"],
+      results: "Pipeline executado diariamente de forma automática, com retries e logs estruturados, garantindo ingestão confiável dos dados climáticos.",
     },
   },
 ];
