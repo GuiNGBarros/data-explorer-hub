@@ -200,6 +200,28 @@ const PipelineClimaSP = () => {
           </div>
         </div>
       )}
+
+      {zoomImg && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/90 backdrop-blur-sm animate-fade-in"
+          style={{ animationDuration: "0.2s" }}
+          onClick={() => setZoomImg(null)}
+        >
+          <button
+            onClick={() => setZoomImg(null)}
+            className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors p-2"
+            aria-label="Fechar"
+          >
+            <X size={24} />
+          </button>
+          <img
+            src={zoomImg}
+            alt="Visualização ampliada"
+            className="max-w-full max-h-[90vh] rounded-xl border border-border animate-scale-in"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 };
