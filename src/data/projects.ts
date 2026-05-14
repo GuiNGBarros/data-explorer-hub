@@ -87,7 +87,7 @@ export const projects: Project[] = [
     description: "Pipeline completo de ML para classificação de risco de crédito, com geração de dados, treinamento de Random Forest e interface web em Streamlit containerizada com Docker.",
     category: "engenharia",
     technologies: ["Python", "Scikit-learn", "Streamlit", "Docker", "Pandas"],
-    githubUrl: "https://github.com/GuiNGBarros",
+    githubUrl: "https://github.com/GuiNGBarros/lab2",
     detailRoute: "/projetos/pipeline-ml-credito",
     externalLabel: "GitHub",
     featured: false,
