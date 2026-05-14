@@ -126,6 +126,74 @@ const PipelineMLCredito = () => {
             ))}
           </div>
         </section>
+
+        <section className="mt-12">
+          <h2 className="text-sm font-mono text-primary mb-6">Arquitetura do pipeline</h2>
+          <div className="max-w-4xl mx-auto overflow-x-auto">
+            <svg viewBox="0 0 900 260" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+              {/* Defs for arrow marker */}
+              <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L9,3 z" fill="hsl(var(--primary))" />
+                </marker>
+              </defs>
+
+              {/* Boxes */}
+              {/* 1. Geração de dados */}
+              <rect x="20" y="40" width="160" height="120" rx="12" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+              <text x="100" y="72" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="600">Geração de Dados</text>
+              <text x="100" y="98" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Python</text>
+              <text x="100" y="116" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Pandas / NumPy</text>
+              <text x="100" y="134" textAnchor="middle" fill="hsl(var(--primary))" fontSize="10" fontFamily="monospace">data.csv</text>
+
+              {/* Arrow 1 */}
+              <line x1="180" y1="100" x2="230" y2="100" stroke="hsl(var(--primary))" strokeWidth="2" markerEnd="url(#arrow)" />
+
+              {/* 2. Treinamento */}
+              <rect x="240" y="40" width="160" height="120" rx="12" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+              <text x="320" y="72" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="600">Treinamento</text>
+              <text x="320" y="98" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Scikit-learn</text>
+              <text x="320" y="116" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Random Forest</text>
+              <text x="320" y="134" textAnchor="middle" fill="hsl(var(--primary))" fontSize="10" fontFamily="monospace">modelo.pkl</text>
+
+              {/* Arrow 2 */}
+              <line x1="400" y1="100" x2="450" y2="100" stroke="hsl(var(--primary))" strokeWidth="2" markerEnd="url(#arrow)" />
+
+              {/* 3. Modelo salvo */}
+              <rect x="460" y="40" width="120" height="120" rx="12" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+              <text x="520" y="72" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="600">Modelo</text>
+              <text x="520" y="98" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Joblib</text>
+              <text x="520" y="116" textAnchor="middle" fill="hsl(var(--primary))" fontSize="10" fontFamily="monospace">.pkl</text>
+              <text x="520" y="134" textAnchor="middle" fill="hsl(var(--primary))" fontSize="10" fontFamily="monospace">.pkl map</text>
+
+              {/* Arrow 3 */}
+              <line x1="580" y1="100" x2="630" y2="100" stroke="hsl(var(--primary))" strokeWidth="2" markerEnd="url(#arrow)" />
+
+              {/* 4. Streamlit App */}
+              <rect x="640" y="40" width="120" height="120" rx="12" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+              <text x="700" y="72" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="600">Streamlit</text>
+              <text x="700" y="98" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Interface</text>
+              <text x="700" y="116" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11">Predição</text>
+              <text x="700" y="134" textAnchor="middle" fill="hsl(var(--primary))" fontSize="10" fontFamily="monospace">app.py</text>
+
+              {/* Arrow 4 */}
+              <line x1="700" y1="160" x2="700" y2="190" stroke="hsl(var(--primary))" strokeWidth="2" markerEnd="url(#arrow)" />
+
+              {/* 5. Docker */}
+              <rect x="620" y="200" width="160" height="50" rx="12" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+              <text x="700" y="230" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="600">Docker</text>
+
+              {/* Vertical connector for docker */}
+              <line x1="700" y1="160" x2="700" y2="200" stroke="hsl(var(--primary))" strokeWidth="2" />
+
+              {/* Labels under boxes */}
+              <text x="100" y="185" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="10">1.000 registros</text>
+              <text x="320" y="185" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="10">80/20 split</text>
+              <text x="520" y="185" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="10">Persistência</text>
+              <text x="700" y="185" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="10">Web app</text>
+            </svg>
+          </div>
+        </section>
       </div>
 
       {active && (
