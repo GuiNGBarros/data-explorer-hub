@@ -81,4 +81,21 @@ export const projects: Project[] = [
       results: "Pipeline executado diariamente de forma automática, com retries e logs estruturados, garantindo ingestão confiável dos dados climáticos.",
     },
   },
+  {
+    id: "pipeline-ml-credito",
+    title: "Pipeline de Machine Learning – Risco de Crédito (Streamlit + Docker)",
+    description: "Pipeline completo de ML para classificação de risco de crédito, com geração de dados, treinamento de Random Forest e interface web em Streamlit containerizada com Docker.",
+    category: "engenharia",
+    technologies: ["Python", "Scikit-learn", "Streamlit", "Docker", "Pandas"],
+    githubUrl: "https://github.com/GuiNGBarros",
+    detailRoute: "/projetos/pipeline-ml-credito",
+    externalLabel: "GitHub",
+    featured: false,
+    details: {
+      problem: "Necessidade de construir um fluxo de ML reprodutível, do dado ao deploy, para classificar clientes entre bom pagador e alto risco de inadimplência.",
+      solution: "Pipeline modular em Python com geração de dados sintéticos, treinamento de Random Forest, persistência de modelo/encoder com joblib e interface interativa em Streamlit, tudo empacotado em container Docker.",
+      tools: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit", "Docker", "Joblib"],
+      results: "Aplicação web portátil que prevê em tempo real a classe e a probabilidade de risco de crédito de novos clientes.",
+    },
+  },
 ];
